@@ -22,6 +22,7 @@ class GdkPixbuf < Formula
   depends_on "libpng"
   depends_on "gobject-introspection"
   depends_on "shared-mime-info"
+  depends_on "perl" => :build
 
   # 'loaders.cache' must be writable by other packages
   skip_clean "lib/gdk-pixbuf-2.0"
