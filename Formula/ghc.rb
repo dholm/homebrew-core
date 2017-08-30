@@ -64,8 +64,8 @@ class Ghc < Formula
   # "This is a distribution for Mac OS X, 10.7 or later."
   resource "binary" do
     if OS.linux?
-      url "https://downloads.haskell.org/~ghc/8.2.1/ghc-8.2.1-x86_64-deb8-linux.tar.xz"
-      sha256 "543b81bf610240bd0398111d6c6607a9094dc2d159b564057d46c8a3d1aaa130"
+      url "https://downloads.haskell.org/~ghc/8.2.1/ghc-8.2.1-x86_64-deb7-linux.tar.xz"
+      sha256 "d5fb718f8eb7f7b481e67769dd14c6266389b8fc4b28118a0947bbfe5feb6c13"
     else
       url "https://downloads.haskell.org/~ghc/8.2.1/ghc-8.2.1-x86_64-apple-darwin.tar.xz"
       sha256 "900c802025fb630060dbd30f9738e5d107a4ca5a50d5c1262cd3e69fe4467188"
