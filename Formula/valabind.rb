@@ -36,6 +36,8 @@ class Valabind < Formula
 
     ENV.prepend_path "PATH", libexec/"bin"
     ENV.prepend_path "PKG_CONFIG_PATH", libexec/"lib/pkgconfig"
+    # Ensure that libvala will be found.
+    ENV.append "LDFLAGS", "-Wl,-rpath,#{libexec}/lib"
 
     system "make"
     system "make", "install", "PREFIX=#{prefix}"
